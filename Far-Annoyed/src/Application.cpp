@@ -21,14 +21,12 @@ namespace Breaker
         {
             FrameCounter();
             // std::cout << "Frametime : " << dt << "\n";
+            
             game->Update(dt);
             
             game->Render();
 
             wnd->OnUpdate();
-
-
-
         };
     }
 

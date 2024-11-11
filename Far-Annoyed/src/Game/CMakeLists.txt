@@ -14,8 +14,6 @@ add_library(Game STATIC
 )
 
 
-target_include_directories(Game PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-
 if(WIN32)
     target_link_libraries(Game PUBLIC glfw opengl32)
 elseif(UNIX)

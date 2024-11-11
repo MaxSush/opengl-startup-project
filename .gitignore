@@ -34,6 +34,9 @@
 # Folders
 .vs/
 out/
+build/
 
 # Files
 CMakePresets.json
+notes.txt
+run.sh
