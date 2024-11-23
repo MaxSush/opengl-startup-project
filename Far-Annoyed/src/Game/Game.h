@@ -9,6 +9,7 @@
 #include "Utility/VAO.h"
 #include "Utility/VBO.h"
 #include "Utility/EBO.h"
+#include "SpriteRenderer.h"
 
 namespace Breaker
 {
@@ -31,6 +32,7 @@ namespace Breaker
 
     private:
         GameState state = GameState::GAME_MENU;
-        VAO vao;
+
+        SpriteRenderer* render = nullptr;
     };
 }

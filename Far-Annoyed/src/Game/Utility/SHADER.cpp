@@ -1,4 +1,5 @@
 #include "SHADER.h"
+#include "SHADER.h"
 
 std::string get_file_contents(const char* filename)
 {
@@ -79,6 +80,11 @@ void Shader::setMat4(const std::string& name, glm::mat4 value) const
 void Shader::setVec3(const std::string& name, glm::vec3 value) const
 {
 	glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1, glm::value_ptr(value));
+}
+
+void Shader::setVec4(const std::string& name, glm::vec4 value) const
+{
+	glUniform4fv(glGetUniformLocation(ID, name.c_str()), 1, glm::value_ptr(value));
 }
 
 void Shader::Delete() const
