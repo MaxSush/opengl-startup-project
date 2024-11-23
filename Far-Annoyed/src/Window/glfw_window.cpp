@@ -74,6 +74,8 @@ namespace Breaker
             return;
         }
 
+        glfwSetKeyCallback(props.window, KeyListner::key_callback);
+
         glfwSwapInterval(GL_ONE);
 
         const GLubyte *renderer = glGetString(GL_RENDERER); // GPU
